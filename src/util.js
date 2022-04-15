@@ -5,10 +5,9 @@ function chillHop() {
     {
       name: 'Ending',
       artist: 'Sadtoi,Relyae',
-      cover:
-        'https://chillhop.com/wp-content/uploads/2022/04/8cc8bdc59b30dd1f9d401cb485b8537d909e1f50-300x300.jpg',
+      cover: 'https://i.scdn.co/image/ab67616d0000b273eaed420428f4881b7c6db265',
       id: uuidv4(),
-      active: false,
+      active: true,
       color: ['#234A8F', '#316962'],
       audio: 'https://mp3.chillhop.com/serve.php/?mp3=28969',
     },

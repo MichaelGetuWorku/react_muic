@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Player from './components/Player';
 import Song from './components/Song';
+import Library from './components/Library';
+
 //styles
 import './styles/app.scss';
 //util
@@ -21,6 +23,7 @@ function App() {
           isPlaying={isPlaying}
           setIsPlaying={setIsPlaying}
         />
+        <Library songs={songs}/>
       </header>
     </div>
   );

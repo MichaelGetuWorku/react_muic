@@ -7,7 +7,9 @@
   background-color: whitesmoke;
   box-shadow: 2px 2px 50px rgb(216, 216, 216);
   overflow: scroll;
-
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
   h2 {
     padding: 2rem;
   }
@@ -18,11 +20,12 @@
   align-items: center;
   padding: 1rem 2rem 1rem 2rem;
   cursor: pointer;
+  transition: background 0.5s ease;
   img {
     width: 30%;
   }
   &:hover {
-    background: rgb(195, 195, 235);
+    background: rgb(201, 201, 227);
   }
 }
 
@@ -51,4 +54,18 @@
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
   border: transparent;
+}
+
+.selected {
+  background-color: rgb(227, 227, 228);
+}
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
